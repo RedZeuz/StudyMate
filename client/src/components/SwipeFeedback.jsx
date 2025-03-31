@@ -3,14 +3,14 @@ import { useMatchStore } from "../store/useMatchStore";
 const getFeedbackStyle = (swipeFeedback) => {
 	if (swipeFeedback === "liked") return "text-green-500";
 	if (swipeFeedback === "passed") return "text-red-500";
-	if (swipeFeedback === "matched") return "text-pink-500";
+	if (swipeFeedback === "matched") return "text-primary";
 	return "";
 };
 
 const getFeedbackText = (swipeFeedback) => {
-	if (swipeFeedback === "liked") return "Liked!";
-	if (swipeFeedback === "passed") return "Passed";
-	if (swipeFeedback === "matched") return "It's a Match!";
+	if (swipeFeedback === "liked") return "Interested!";
+	if (swipeFeedback === "passed") return "Not Interested";
+	if (swipeFeedback === "matched") return "Study Partner Found!";
 	return "";
 };
 

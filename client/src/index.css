@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 52, 76, 183;
+    --color-secondary: 74, 99, 231;
+    --color-light: 107, 129, 255;
+  }
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-secondary text-white;
+}
+
+.text-primary {
+  @apply text-[#344CB7];
+}
+
+.bg-primary {
+  @apply bg-[#344CB7];
+}
+
+.border-primary {
+  @apply border-[#344CB7];
+}
